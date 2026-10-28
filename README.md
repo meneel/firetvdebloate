@@ -5,20 +5,54 @@ Home opens a full-screen "Featured" screen (new, recommended and top-rated films
 with a glass dock for your apps, Continue watching, weather, a Now Playing card, an Aurora screensaver, and apps closed
 when you leave them. No ads, no tracking, nothing uninstalled.
 
-![Featured screen](docs/screenshots/featured.png)
-![Dock up, featured screen blurred behind it](docs/screenshots/dock.png)
+<p align="center"><img src="docs/screenshots/featured-pirates.jpg" alt="Featured screen" width="860"></p>
+
+> ### Read this first: forks, credits, no affiliation
+> This repository is a **toolkit**. The launcher and the Home-button hook are **modified forks of other people's projects**,
+> not my original work:
+> - the launcher is a fork of **[CleanYourTV](https://github.com/Gathin23/cleanyourtv)** by **Gathin** (MIT) → [my fork](https://github.com/meneel/cleanyourtv), branch `continue-watching`;
+> - the Home hook is a fork of **[dumbtv](https://github.com/humblemuzzu/dumbtv)** by the **dumbtv contributors** (MIT) → [my fork](https://github.com/meneel/dumbtv), branch `guard-target`.
+>
+> Their licences and copyright notices are kept; each fork says so in its README and in a `FORK.md` listing what changed. They are **not** the official
+> projects and are not endorsed, maintained or supported by their authors. If you want the originals, use the links above.
+> This project is also not affiliated with or endorsed by Amazon, Apple, TMDB, Netflix or any streaming service. "Fire TV", "Apple TV" and other names are
+> trademarks of their owners, used only to say what this works with or what the look resembles; no Apple or Amazon assets are used.
 
 > **Status:** one person's setup, built and tested on one stick. It works there; on other devices treat it as a starting point.
-> Everything below is reversible, but read [Safety](#safety-and-rollback) first. Not affiliated with Amazon, Apple, Netflix,
-> TMDB or any streaming service; "Apple-TV-style" describes a look, no Apple assets are used.
+> Everything below is reversible, but read [Safety](#safety-and-rollback) first.
+
+## Screenshots
+
+**Featured Home.** Full-screen backdrops and details for new, recommended and top-rated titles that stream on *your* apps. Left/Right browses, OK opens details, Down brings the dock up.
+
+<p><img src="docs/screenshots/featured-mission.jpg" alt="Another featured title" width="49%"> <img src="docs/screenshots/featured-pirates.jpg" alt="Featured title" width="49%"></p>
+
+**Dock.** Down blurs the backdrop and lifts a glass dock with your apps; Up from the dock returns. Up again goes to the header (heavy blur).
+
+<p><img src="docs/screenshots/dock.jpg" alt="Dock up over the blurred backdrop" width="49%"> <img src="docs/screenshots/header.jpg" alt="Header focused, heavy blur" width="49%"></p>
+
+**Three Home looks**, switched in Settings → Home screen → Home page: Recommendations (above), Landscape (a generated sky for the hour) and Classic (your wallpaper).
+
+<p><img src="docs/screenshots/landscape.jpg" alt="Landscape home" width="49%"> <img src="docs/screenshots/classic.jpg" alt="Classic home" width="49%"></p>
+
+**Settings.** A left menu and one glass panel at a time.
+
+<p><img src="docs/screenshots/settings-layout.jpg" alt="Settings: layout" width="49%"> <img src="docs/screenshots/settings-home.jpg" alt="Settings: home screen" width="49%"></p>
+<p><img src="docs/screenshots/settings-motion.jpg" alt="Settings: motion and start" width="49%"> <img src="docs/screenshots/settings-system.jpg" alt="Settings: reset and system" width="49%"></p>
+
+**Aurora screensaver.** Slow colour drift with the time, date and weather; it starts after 5 minutes idle and the TV sleeps after 2 hours (both configurable in the TV's own settings).
+
+<p><img src="docs/screenshots/screensaver.jpg" alt="Aurora screensaver" width="49%"></p>
+
+*Screenshots are from a real TV in Kolkata; posters and app logos belong to their owners.*
 
 ## What is in here
 
 | Path | What it is |
 |---|---|
 | `fire.sh`, `tiers/` | Debloat: `backup`, `apply tier1 tier2 tier4`, `revert`, `status`. Only `pm disable-user` is used, so every change can be undone. Tier 3 (the Alexa voice stack) breaks the voice button and is not applied by default. |
-| `vendor/cleanyourtv` | Submodule: my fork of [Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv), the launcher (branch `continue-watching`). Featured screen, glass dock, weather, Now Playing, screensaver, close-apps, settings. |
-| `vendor/dumbtv` | Submodule: my fork of [humblemuzzu/dumbtv](https://github.com/humblemuzzu/dumbtv) (branch `guard-target`). Its accessibility "Guard" makes the Home button open another launcher in about 2 to 3 seconds. |
+| `vendor/cleanyourtv` | Submodule: my **modified fork** of [Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv) (original by Gathin, MIT), the launcher (branch `continue-watching`). Featured screen, glass dock, weather, Now Playing, screensaver, close-apps, settings. |
+| `vendor/dumbtv` | Submodule: my **modified fork** of [humblemuzzu/dumbtv](https://github.com/humblemuzzu/dumbtv) (original by the dumbtv contributors, MIT) (branch `guard-target`). Its accessibility "Guard" makes the Home button open another launcher in about 2 to 3 seconds. |
 | `themes/glass-firetv/` | Example launcher configuration (`config.device.json` is the live one). |
 | `tools/` | Build wrapper, verification gates, a Home-handoff timer. |
 | `docs/` | Design notes and plans; `docs/DEVLOG.md` is the build diary with measurements. |
@@ -87,9 +121,13 @@ apps' media sessions; it never reads notification text (also enforced by a test)
 were tuned for one stick and are not gospel. Memory is tight on 1 GB: the Featured screen costs about 60 MB over the plain launcher.
 
 ## Credits and licences
-- This repo: MIT (see `LICENSE`). Both submodules keep their upstream MIT licences and history; the launcher is
-  [CleanYourTV](https://github.com/Gathin23/cleanyourtv) by Gathin and the Home hook is [dumbtv](https://github.com/humblemuzzu/dumbtv) by its contributors.
-- Font: [Inter](https://rsms.me/inter/) (SIL Open Font License 1.1, copy in `vendor/cleanyourtv/launcher/fonts/`).
+- **This repository's own files** (`fire.sh`, `tools/`, `tiers/`, `themes/`, `docs/`, this README): MIT, Copyright (c) 2026 Indraneel Dutta (see `LICENSE`).
+  That licence covers only those files, not the submodules.
+- **Launcher: [CleanYourTV](https://github.com/Gathin23/cleanyourtv), Copyright (c) 2026 Gathin, MIT.** `vendor/cleanyourtv` is a modified fork; the original licence and
+  copyright are kept in its `LICENSE`, and `FORK.md` lists what I changed. All credit for the original launcher and the TV-cleaning pipeline goes to its author.
+- **Home hook: [dumbtv](https://github.com/humblemuzzu/dumbtv), Copyright (c) 2026 dumbtv contributors, MIT.** `vendor/dumbtv` is a modified fork with the same arrangement.
+- Font: [Inter](https://rsms.me/inter/), Copyright (c) 2016 The Inter Project Authors, SIL Open Font License 1.1 (copy in `vendor/cleanyourtv/launcher/fonts/`).
 - Film and show data and images: **This product uses the TMDB API but is not endorsed or certified by TMDB.**
 - Weather by [Open-Meteo](https://open-meteo.com), location by [ipwho.is](https://ipwho.is).
-- Screenshots show posters and app logos belonging to their owners.
+- Screenshots show posters and app logos belonging to their owners. Fire TV, Amazon, Apple TV, Netflix and the other product names are trademarks of their respective owners.
+- Not legal advice: if you redistribute or sell anything built from this, check the licences of the forks and of the services you connect to.
