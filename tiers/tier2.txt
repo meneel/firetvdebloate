@@ -1,0 +1,15 @@
+# Optional Amazon extras. Each removes one feature you may not use.
+com.amazon.ftv.screensaver        # Amazon screensaver (falls back to a plain one)
+com.amazon.bueller.photos         # Amazon Photos
+com.amazon.bueller.music          # Amazon Music stub
+com.amazon.gamehub                # Games hub
+com.amazon.minitv.android.app     # miniTV
+com.amazon.tahoe                  # Kids / FreeTime
+com.amazon.tv.livetv              # Live TV guide
+com.amazon.tv.matter              # Matter smart-home
+com.amazon.tv.mattercohost        # Matter smart-home
+com.amazon.spotify.mediabrowserservice  # Spotify-via-Alexa
+com.amazon.wha.mediabrowserservice      # Alexa multi-room music
+com.amazon.whasettings                  # Alexa multi-room settings
+com.amazon.tv.alexaalerts         # Alexa alarms/timers
+com.amazon.cast.sink              # Screen mirroring TO the TV

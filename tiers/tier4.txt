@@ -1,0 +1,17 @@
+# From the Gathin23/cleanyourtv Stick Lite list (tested on build PS7717.5741N), minus anything Alexa/voice-related.
+# Ads / promos / data upload (highest value)
+com.amazon.kso.blackbird          # launcher ad sync / bidding
+com.amazon.sneakpeek              # sponsored "Sneak Peek" previews
+com.amazon.tv.easyupgrade         # "upgrade your Fire TV" promos
+com.amazon.wifilocker             # uploads Wi-Fi passwords to Amazon
+com.amazon.privacypassservice     # privacy-pass token service
+com.amazon.tv.developer.dataservice  # personalisation data for third-party apps
+# Unused features
+com.amazon.cloud9                 # Silk browser
+com.amazon.tv.website_launcher    # opens websites in Silk
+com.amazon.ods.kindleconnect      # "show on Fire TV" from Echo / Fire tablet
+com.amazon.whad                   # whole-home audio (multi-room music)
+com.amazon.audiohome              # Alexa Home Theater
+com.amazon.hedwig                 # Fire TV Channels
+com.amazon.franktvinput           # live TV input feeding the Live tab
+com.amazon.whisperjoin.middleware.np  # setup of other Amazon devices

@@ -1,0 +1,8 @@
+[submodule "vendor/cleanyourtv"]
+	path = vendor/cleanyourtv
+	url = https://github.com/meneel/cleanyourtv.git
+	branch = continue-watching
+[submodule "vendor/dumbtv"]
+	path = vendor/dumbtv
+	url = https://github.com/meneel/dumbtv.git
+	branch = guard-target

@@ -1,0 +1,39 @@
+{
+  "dock_apps": [
+    "com.netflix.ninja",
+    "com.amazon.firetv.youtube",
+    "com.amazon.firebat",
+    "com.apple.atve.amazon.appletv",
+    "in.startv.hotstar",
+    "com.viewlift.hoichoiprod"
+  ],
+  "background_color": "#090C14",
+  "wallpaper": true,
+  "cinematic_home": true,
+  "dock_glass": true,
+  "icon_only_buttons": true,
+  "app_glow": true,
+  "glow_style": "horizon",
+  "focus_overshoot": false,
+  "advanced_effects": true,
+  "hidden_apps": [
+    "com.amazon.firetv.troubleshooting",
+    "tv.dumbtv.home",
+    "com.amazon.audiohome"
+  ],
+  "app_library": true,
+  "library_apps": [
+    "com.amazon.venezia"
+  ],
+  "continue_watching": true,
+  "weather": true,
+  "weather_ip": true,
+  "weather_city": "Kolkata",
+  "weather_lat": 22.5726,
+  "weather_lon": 88.3639,
+  "launcher_settings_button": true,
+  "now_playing": true,
+  "recommendations": true,
+  "featured": true,
+  "close_apps": true
+}

@@ -1,0 +1,5 @@
+# Alexa voice stack, ~100 MB RAM. Voice remote button stops working. Biggest win, biggest loss.
+com.amazon.vizzini
+com.amazon.aca
+com.amazon.ceviche
+com.amazon.alexamediaplayer.runtime.ftv

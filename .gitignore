@@ -1,0 +1,15 @@
+# Whitelist: everything is ignored unless listed. Device dumps, backups, notes and keys never get published.
+/*
+!/.gitignore
+!/.gitmodules
+!/LICENSE
+!/README.md
+!/fire.sh
+!/tiers
+!/tools
+!/themes
+!/docs
+!/vendor
+!/vendor/cleanyourtv
+!/vendor/dumbtv
+/themes/glass-firetv/wallpaper.jpg
