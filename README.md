@@ -54,7 +54,7 @@ when you leave them. No ads, no tracking, nothing uninstalled.
 | `vendor/cleanyourtv` | Submodule: my **modified fork** of [Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv) (original by Gathin, MIT), the launcher (branch `continue-watching`). Featured screen, glass dock, weather, Now Playing, screensaver, close-apps, settings. |
 | `vendor/dumbtv` | Submodule: my **modified fork** of [humblemuzzu/dumbtv](https://github.com/humblemuzzu/dumbtv) (original by the dumbtv contributors, MIT) (branch `guard-target`). Its accessibility "Guard" makes the Home button open another launcher in about 2 to 3 seconds. |
 | `themes/glass-firetv/` | Example launcher configuration (`config.device.json` is the live one). |
-| `tools/` | Build wrapper, verification gates, a Home-handoff timer, `load-test.py` / `app-launch-test.sh` (leak and launch timing), `trim-caches.sh` (clears all apps' caches over adb; `firetv-trim-caches.plist.example` runs it daily from macOS launchd). The launcher also sweeps its own stale cache files every two days. |
+| `tools/` | Build wrapper, verification gates, a Home-handoff timer, `load-test.py` / `app-launch-test.sh` (leak and launch timing), `trim-caches.sh` (clears all apps' caches over adb, run by hand; `firetv-trim-caches.plist.example` is an optional macOS launchd template, not installed). The launcher also sweeps its own stale cache files every two days. |
 | `docs/` | Design notes and plans; `docs/DEVLOG.md` is the build diary with measurements. |
 
 ## Quick start
